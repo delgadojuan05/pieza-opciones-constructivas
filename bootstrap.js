@@ -1,0 +1,1 @@
+import('./app.js').catch(error=>{document.getElementById('loading').hidden=true;const panel=document.getElementById('error');panel.hidden=false;panel.textContent='No se pudo cargar el visor. Revisá tu conexión y volvé a abrir la página. '+error.message;document.documentElement.dataset.viewerState='error';console.error(error);});
